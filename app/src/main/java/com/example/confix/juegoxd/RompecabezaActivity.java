@@ -1,6 +1,7 @@
  package com.example.confix.juegoxd;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -61,10 +62,14 @@ import java.util.Random;
 
                 if(move2.equals("")){
                     btn_1.setText("");
+                    btn_1.setBackgroundColor(Color.GRAY);
                     btn_2.setText(now);
+                    btn_2.setBackgroundColor(getResources().getColor(R.color.holo_orange_light));
                 }else if(move4.equals("")){
                     btn_1.setText("");
+                    btn_1.setBackgroundColor(Color.GRAY);
                     btn_4.setText(now);
+                    btn_4.setBackgroundColor(getResources().getColor(R.color.holo_orange_light));
                 }
 
                 String[] nowArray = new String[9];
@@ -79,7 +84,7 @@ import java.util.Random;
                 nowArray[8] = btn_9.getText().toString();
 
                 if (comparador(nowArray)){
-                    btn_9.setText("Ganaster!");
+                    btn_9.setText("Ganaste!");
                 }
             }
         });
@@ -96,13 +101,19 @@ import java.util.Random;
 
                 if(move1.equals("")){
                     btn_2.setText("");
+                    btn_2.setBackgroundColor(Color.GRAY);
                     btn_1.setText(now);
+                    btn_1.setBackgroundColor(getResources().getColor(R.color.holo_orange_light));
                 }else if(move3.equals("")){
                     btn_2.setText("");
+                    btn_2.setBackgroundColor(Color.GRAY);
                     btn_3.setText(now);
+                    btn_3.setBackgroundColor(getResources().getColor(R.color.holo_orange_light));
                 }else if(move5.equals("")){
                     btn_2.setText("");
+                    btn_2.setBackgroundColor(Color.GRAY);
                     btn_5.setText(now);
+                    btn_5.setBackgroundColor(getResources().getColor(R.color.holo_orange_light));
                 }
 
                 String[] nowArray = new String[9];
@@ -117,7 +128,7 @@ import java.util.Random;
                 nowArray[8] = btn_9.getText().toString();
 
                 if (comparador(nowArray)){
-                    btn_9.setText("Ganaster!");
+                    btn_9.setText("Ganaste!");
                 }
             }
         });
@@ -132,10 +143,14 @@ import java.util.Random;
 
                 if(move2.equals("")){
                     btn_3.setText("");
+                    btn_3.setBackgroundColor(Color.GRAY);
                     btn_2.setText(now);
+                    btn_2.setBackgroundColor(getResources().getColor(R.color.holo_orange_light));
                 }else if(move6.equals("")){
                     btn_3.setText("");
+                    btn_3.setBackgroundColor(Color.GRAY);
                     btn_6.setText(now);
+                    btn_6.setBackgroundColor(getResources().getColor(R.color.holo_orange_light));
                 }
 
                 String[] nowArray = new String[9];
@@ -150,7 +165,7 @@ import java.util.Random;
                 nowArray[8] = btn_9.getText().toString();
 
                 if (comparador(nowArray)){
-                    btn_9.setText("Ganaster!");
+                    btn_9.setText("Ganaste!");
                 }
             }
         });
@@ -166,13 +181,19 @@ import java.util.Random;
 
                 if(move1.equals("")){
                     btn_4.setText("");
+                    btn_4.setBackgroundColor(Color.GRAY);
                     btn_1.setText(now);
+                    btn_1.setBackgroundColor(getResources().getColor(R.color.holo_orange_light));
                 }else if(move7.equals("")){
                     btn_4.setText("");
+                    btn_4.setBackgroundColor(Color.GRAY);
                     btn_7.setText(now);
+                    btn_7.setBackgroundColor(getResources().getColor(R.color.holo_orange_light));
                 }else if(move5.equals("")){
                     btn_4.setText("");
+                    btn_4.setBackgroundColor(Color.GRAY);
                     btn_5.setText(now);
+                    btn_5.setBackgroundColor(getResources().getColor(R.color.holo_orange_light));
                 }
 
                 String[] nowArray = new String[9];
@@ -187,7 +208,7 @@ import java.util.Random;
                 nowArray[8] = btn_9.getText().toString();
 
                 if (comparador(nowArray)){
-                    btn_9.setText("Ganaster!");
+                    btn_9.setText("Ganaste!");
                 }
             }
         });
@@ -205,16 +226,24 @@ import java.util.Random;
 
                 if(move2.equals("")){
                     btn_5.setText("");
+                    btn_5.setBackgroundColor(Color.GRAY);
                     btn_2.setText(now);
+                    btn_2.setBackgroundColor(getResources().getColor(R.color.holo_orange_light));
                 }else if(move4.equals("")){
                     btn_5.setText("");
+                    btn_5.setBackgroundColor(Color.GRAY);
                     btn_4.setText(now);
+                    btn_4.setBackgroundColor(getResources().getColor(R.color.holo_orange_light));
                 }else if(move6.equals("")){
                     btn_5.setText("");
+                    btn_5.setBackgroundColor(Color.GRAY);
                     btn_6.setText(now);
+                    btn_6.setBackgroundColor(getResources().getColor(R.color.holo_orange_light));
                 }else if(move8.equals("")){
                     btn_5.setText("");
+                    btn_5.setBackgroundColor(Color.GRAY);
                     btn_8.setText(now);
+                    btn_8.setBackgroundColor(getResources().getColor(R.color.holo_orange_light));
                 }
 
                 String[] nowArray = new String[9];
@@ -245,13 +274,19 @@ import java.util.Random;
 
                 if(move9.equals("")){
                     btn_6.setText("");
+                    btn_6.setBackgroundColor(Color.GRAY);
                     btn_9.setText(now);
+                    btn_9.setBackgroundColor(getResources().getColor(R.color.holo_orange_light));
                 }else if(move3.equals("")){
                     btn_6.setText("");
+                    btn_6.setBackgroundColor(Color.GRAY);
                     btn_3.setText(now);
+                    btn_3.setBackgroundColor(getResources().getColor(R.color.holo_orange_light));
                 }else if(move5.equals("")){
                     btn_6.setText("");
+                    btn_6.setBackgroundColor(Color.GRAY);
                     btn_5.setText(now);
+                    btn_5.setBackgroundColor(getResources().getColor(R.color.holo_orange_light));
                 }
 
                 String[] nowArray = new String[9];
@@ -266,7 +301,7 @@ import java.util.Random;
                 nowArray[8] = btn_9.getText().toString();
 
                 if (comparador(nowArray)){
-                    btn_9.setText("Ganaster!");
+                    btn_9.setText("Ganaste!");
                 }
             }
         });
@@ -280,10 +315,14 @@ import java.util.Random;
 
                 if(move8.equals("")){
                     btn_7.setText("");
+                    btn_7.setBackgroundColor(Color.GRAY);
                     btn_8.setText(now);
+                    btn_8.setBackgroundColor(getResources().getColor(R.color.holo_orange_light));
                 }else if(move4.equals("")){
                     btn_7.setText("");
+                    btn_7.setBackgroundColor(Color.GRAY);
                     btn_4.setText(now);
+                    btn_4.setBackgroundColor(getResources().getColor(R.color.holo_orange_light));
                 }
 
                 String[] nowArray = new String[9];
@@ -298,7 +337,7 @@ import java.util.Random;
                 nowArray[8] = btn_9.getText().toString();
 
                 if (comparador(nowArray)){
-                    btn_9.setText("Ganaster!");
+                    btn_9.setText("Ganaste!");
                 }
             }
         });
@@ -314,13 +353,19 @@ import java.util.Random;
 
                 if(move9.equals("")){
                     btn_8.setText("");
+                    btn_8.setBackgroundColor(Color.GRAY);
                     btn_9.setText(now);
+                    btn_9.setBackgroundColor(getResources().getColor(R.color.holo_orange_light));
                 }else if(move7.equals("")){
                     btn_8.setText("");
+                    btn_8.setBackgroundColor(Color.GRAY);
                     btn_7.setText(now);
+                    btn_7.setBackgroundColor(getResources().getColor(R.color.holo_orange_light));
                 }else if(move5.equals("")){
                     btn_8.setText("");
+                    btn_8.setBackgroundColor(Color.GRAY);
                     btn_5.setText(now);
+                    btn_5.setBackgroundColor(getResources().getColor(R.color.holo_orange_light));
                 }
 
                 String[] nowArray = new String[9];
@@ -335,7 +380,7 @@ import java.util.Random;
                 nowArray[8] = btn_9.getText().toString();
 
                 if (comparador(nowArray)){
-                    btn_9.setText("Ganaster!");
+                    btn_9.setText("Ganaste!");
                 }
             }
         });
@@ -350,10 +395,14 @@ import java.util.Random;
 
                 if(move8.equals("")){
                     btn_9.setText("");
+                    btn_9.setBackgroundColor(Color.GRAY);
                     btn_8.setText(now);
+                    btn_8.setBackgroundColor(getResources().getColor(R.color.holo_orange_light));
                 }else if(move6.equals("")){
                     btn_9.setText("");
+                    btn_9.setBackgroundColor(Color.GRAY);
                     btn_6.setText(now);
+                    btn_6.setBackgroundColor(getResources().getColor(R.color.holo_orange_light));
                 }
 
                 String[] nowArray = new String[9];
@@ -368,7 +417,7 @@ import java.util.Random;
                 nowArray[8] = btn_9.getText().toString();
 
                 if (comparador(nowArray)){
-                    btn_9.setText("Ganaster!");
+                    btn_9.setText("Ganaste!");
                 }
             }
         });
