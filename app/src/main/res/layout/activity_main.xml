@@ -17,7 +17,7 @@
             android:id="@+id/tricki"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Tic-Tac-Toe" />
+            android:text="Tik-Tak-Toe" />
 
         <Button
             android:id="@+id/rompecabeza"
