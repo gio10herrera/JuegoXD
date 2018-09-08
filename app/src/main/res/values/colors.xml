@@ -4,4 +4,7 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="holo_orange_light">#ffffbb33</color>
+    <color name="triqui">#ff3a33</color>
+    <color name="rompecabeza">#c233ff</color>
+    <color name="about">#36ff33</color>
 </resources>

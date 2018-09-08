@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         btn_about.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, RompecabezaActivity.class);
+                Intent intent = new Intent(MainActivity.this, AboutActivity.class);
                 startActivity(intent);
             }
         });

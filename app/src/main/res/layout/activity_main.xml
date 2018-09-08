@@ -15,20 +15,37 @@
 
         <Button
             android:id="@+id/tricki"
+            style="@android:style/Widget.Button.Toggle"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Tik-Tak-Toe" />
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="TRIQUI"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:background="@color/triqui"/>
 
         <Button
             android:id="@+id/rompecabeza"
+            style="@android:style/Widget.Button.Toggle"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Rompecabeza" />
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="ORDENAR NUMEROS"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:background="@color/rompecabeza"
+            />
 
         <Button
             android:id="@+id/about"
+            style="@android:style/Widget.Button.Toggle"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="About" />
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="ACERCA DE"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:background="@color/about"
+            />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
