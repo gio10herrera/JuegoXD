@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".TiKTakToe" />
         <activity android:name=".RompecabezaActivity" />
-        <activity android:name=".AboutActivity"></activity>
+        <activity android:name=".AboutActivity" />
+        <activity android:name=".CambiarImagenActivity"></activity>
     </application>
 
 </manifest>
