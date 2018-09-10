@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_weight="1"
     tools:context="com.example.confix.juegoxd.RompecabezaActivity">
 
 
@@ -111,6 +112,47 @@
                 android:textSize="24sp" />
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_reniciar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Reniciar"
+                android:textSize="24sp"
+                tools:text="Reniciar" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:text="Intentos"
+                    android:textAlignment="center"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/txt_try"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+        </LinearLayout>
 
 
     </LinearLayout>

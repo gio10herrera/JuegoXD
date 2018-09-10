@@ -6,13 +6,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+
 import java.util.concurrent.ThreadLocalRandom;
 
 import java.util.Random;
 
  public class RompecabezaActivity extends AppCompatActivity {
 
-    Button btn_1, btn_2, btn_3, btn_4, btn_5, btn_6, btn_7, btn_8, btn_9;
+    Button btn_1, btn_2, btn_3, btn_4, btn_5, btn_6, btn_7, btn_8, btn_9, btn_reniciar;
+    TextView txt_try;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +31,9 @@ import java.util.Random;
         btn_7 = (Button)findViewById(R.id.btn_7);
         btn_8 = (Button)findViewById(R.id.btn_8);
         btn_9 = (Button)findViewById(R.id.btn_9);
+        btn_reniciar = (Button)findViewById(R.id.btn_reniciar);
+
+        txt_try = (TextView)findViewById(R.id.txt_try);
 
         int[] randomArrayNum = new int[] {1,2,3,4,5,6,7,8,0};
         String[] randomArray = new String[9];
@@ -52,6 +58,47 @@ import java.util.Random;
         btn_9.setText(String.valueOf(randomArray[0]));
 
 
+        btn_reniciar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                int[] randomArrayNum = new int[] {1,2,3,4,5,6,7,8,0};
+                String[] randomArray = new String[9];
+                shuffleArray(randomArrayNum);
+
+                for(int i=0; i<randomArrayNum.length; i++){
+                    if(randomArrayNum[i] == 0){
+                        randomArray[i] = "";
+                    }else{
+                        randomArray[i] = String.valueOf(randomArrayNum[i]);
+                    }
+                }
+
+                btn_1.setText(String.valueOf(randomArray[1]));
+                btn_2.setText(String.valueOf(randomArray[2]));
+                btn_3.setText(String.valueOf(randomArray[3]));
+                btn_4.setText(String.valueOf(randomArray[4]));
+                btn_5.setText(String.valueOf(randomArray[5]));
+                btn_6.setText(String.valueOf(randomArray[6]));
+                btn_7.setText(String.valueOf(randomArray[7]));
+                btn_8.setText(String.valueOf(randomArray[8]));
+                btn_9.setText(String.valueOf(randomArray[0]));
+
+                txt_try.setText("0");
+
+                btn_1.setBackgroundColor(getResources().getColor(R.color.holo_orange_light));
+                btn_2.setBackgroundColor(getResources().getColor(R.color.holo_orange_light));
+                btn_3.setBackgroundColor(getResources().getColor(R.color.holo_orange_light));
+                btn_4.setBackgroundColor(getResources().getColor(R.color.holo_orange_light));
+                btn_5.setBackgroundColor(getResources().getColor(R.color.holo_orange_light));
+                btn_6.setBackgroundColor(getResources().getColor(R.color.holo_orange_light));
+                btn_7.setBackgroundColor(getResources().getColor(R.color.holo_orange_light));
+                btn_8.setBackgroundColor(getResources().getColor(R.color.holo_orange_light));
+                btn_9.setBackgroundColor(getResources().getColor(R.color.holo_orange_light));
+            }
+        });
+
+
         btn_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -65,11 +112,19 @@ import java.util.Random;
                     btn_1.setBackgroundColor(Color.GRAY);
                     btn_2.setText(now);
                     btn_2.setBackgroundColor(getResources().getColor(R.color.holo_orange_light));
+
+                    int intento = Integer.parseInt(txt_try.getText().toString());
+                    intento += 1;
+                    txt_try.setText(String.valueOf(intento));
                 }else if(move4.equals("")){
                     btn_1.setText("");
                     btn_1.setBackgroundColor(Color.GRAY);
                     btn_4.setText(now);
                     btn_4.setBackgroundColor(getResources().getColor(R.color.holo_orange_light));
+
+                    int intento = Integer.parseInt(txt_try.getText().toString());
+                    intento += 1;
+                    txt_try.setText(String.valueOf(intento));
                 }
 
                 String[] nowArray = new String[9];
@@ -104,16 +159,28 @@ import java.util.Random;
                     btn_2.setBackgroundColor(Color.GRAY);
                     btn_1.setText(now);
                     btn_1.setBackgroundColor(getResources().getColor(R.color.holo_orange_light));
+
+                    int intento = Integer.parseInt(txt_try.getText().toString());
+                    intento += 1;
+                    txt_try.setText(String.valueOf(intento));
                 }else if(move3.equals("")){
                     btn_2.setText("");
                     btn_2.setBackgroundColor(Color.GRAY);
                     btn_3.setText(now);
                     btn_3.setBackgroundColor(getResources().getColor(R.color.holo_orange_light));
+
+                    int intento = Integer.parseInt(txt_try.getText().toString());
+                    intento += 1;
+                    txt_try.setText(String.valueOf(intento));
                 }else if(move5.equals("")){
                     btn_2.setText("");
                     btn_2.setBackgroundColor(Color.GRAY);
                     btn_5.setText(now);
                     btn_5.setBackgroundColor(getResources().getColor(R.color.holo_orange_light));
+
+                    int intento = Integer.parseInt(txt_try.getText().toString());
+                    intento += 1;
+                    txt_try.setText(String.valueOf(intento));
                 }
 
                 String[] nowArray = new String[9];
@@ -146,11 +213,19 @@ import java.util.Random;
                     btn_3.setBackgroundColor(Color.GRAY);
                     btn_2.setText(now);
                     btn_2.setBackgroundColor(getResources().getColor(R.color.holo_orange_light));
+
+                    int intento = Integer.parseInt(txt_try.getText().toString());
+                    intento += 1;
+                    txt_try.setText(String.valueOf(intento));
                 }else if(move6.equals("")){
                     btn_3.setText("");
                     btn_3.setBackgroundColor(Color.GRAY);
                     btn_6.setText(now);
                     btn_6.setBackgroundColor(getResources().getColor(R.color.holo_orange_light));
+
+                    int intento = Integer.parseInt(txt_try.getText().toString());
+                    intento += 1;
+                    txt_try.setText(String.valueOf(intento));
                 }
 
                 String[] nowArray = new String[9];
@@ -184,16 +259,28 @@ import java.util.Random;
                     btn_4.setBackgroundColor(Color.GRAY);
                     btn_1.setText(now);
                     btn_1.setBackgroundColor(getResources().getColor(R.color.holo_orange_light));
+
+                    int intento = Integer.parseInt(txt_try.getText().toString());
+                    intento += 1;
+                    txt_try.setText(String.valueOf(intento));
                 }else if(move7.equals("")){
                     btn_4.setText("");
                     btn_4.setBackgroundColor(Color.GRAY);
                     btn_7.setText(now);
                     btn_7.setBackgroundColor(getResources().getColor(R.color.holo_orange_light));
+
+                    int intento = Integer.parseInt(txt_try.getText().toString());
+                    intento += 1;
+                    txt_try.setText(String.valueOf(intento));
                 }else if(move5.equals("")){
                     btn_4.setText("");
                     btn_4.setBackgroundColor(Color.GRAY);
                     btn_5.setText(now);
                     btn_5.setBackgroundColor(getResources().getColor(R.color.holo_orange_light));
+
+                    int intento = Integer.parseInt(txt_try.getText().toString());
+                    intento += 1;
+                    txt_try.setText(String.valueOf(intento));
                 }
 
                 String[] nowArray = new String[9];
@@ -229,21 +316,37 @@ import java.util.Random;
                     btn_5.setBackgroundColor(Color.GRAY);
                     btn_2.setText(now);
                     btn_2.setBackgroundColor(getResources().getColor(R.color.holo_orange_light));
+
+                    int intento = Integer.parseInt(txt_try.getText().toString());
+                    intento += 1;
+                    txt_try.setText(String.valueOf(intento));
                 }else if(move4.equals("")){
                     btn_5.setText("");
                     btn_5.setBackgroundColor(Color.GRAY);
                     btn_4.setText(now);
                     btn_4.setBackgroundColor(getResources().getColor(R.color.holo_orange_light));
+
+                    int intento = Integer.parseInt(txt_try.getText().toString());
+                    intento += 1;
+                    txt_try.setText(String.valueOf(intento));
                 }else if(move6.equals("")){
                     btn_5.setText("");
                     btn_5.setBackgroundColor(Color.GRAY);
                     btn_6.setText(now);
                     btn_6.setBackgroundColor(getResources().getColor(R.color.holo_orange_light));
+
+                    int intento = Integer.parseInt(txt_try.getText().toString());
+                    intento += 1;
+                    txt_try.setText(String.valueOf(intento));
                 }else if(move8.equals("")){
                     btn_5.setText("");
                     btn_5.setBackgroundColor(Color.GRAY);
                     btn_8.setText(now);
                     btn_8.setBackgroundColor(getResources().getColor(R.color.holo_orange_light));
+
+                    int intento = Integer.parseInt(txt_try.getText().toString());
+                    intento += 1;
+                    txt_try.setText(String.valueOf(intento));
                 }
 
                 String[] nowArray = new String[9];
@@ -277,16 +380,28 @@ import java.util.Random;
                     btn_6.setBackgroundColor(Color.GRAY);
                     btn_9.setText(now);
                     btn_9.setBackgroundColor(getResources().getColor(R.color.holo_orange_light));
+
+                    int intento = Integer.parseInt(txt_try.getText().toString());
+                    intento += 1;
+                    txt_try.setText(String.valueOf(intento));
                 }else if(move3.equals("")){
                     btn_6.setText("");
                     btn_6.setBackgroundColor(Color.GRAY);
                     btn_3.setText(now);
                     btn_3.setBackgroundColor(getResources().getColor(R.color.holo_orange_light));
+
+                    int intento = Integer.parseInt(txt_try.getText().toString());
+                    intento += 1;
+                    txt_try.setText(String.valueOf(intento));
                 }else if(move5.equals("")){
                     btn_6.setText("");
                     btn_6.setBackgroundColor(Color.GRAY);
                     btn_5.setText(now);
                     btn_5.setBackgroundColor(getResources().getColor(R.color.holo_orange_light));
+
+                    int intento = Integer.parseInt(txt_try.getText().toString());
+                    intento += 1;
+                    txt_try.setText(String.valueOf(intento));
                 }
 
                 String[] nowArray = new String[9];
@@ -318,11 +433,19 @@ import java.util.Random;
                     btn_7.setBackgroundColor(Color.GRAY);
                     btn_8.setText(now);
                     btn_8.setBackgroundColor(getResources().getColor(R.color.holo_orange_light));
+
+                    int intento = Integer.parseInt(txt_try.getText().toString());
+                    intento += 1;
+                    txt_try.setText(String.valueOf(intento));
                 }else if(move4.equals("")){
                     btn_7.setText("");
                     btn_7.setBackgroundColor(Color.GRAY);
                     btn_4.setText(now);
                     btn_4.setBackgroundColor(getResources().getColor(R.color.holo_orange_light));
+
+                    int intento = Integer.parseInt(txt_try.getText().toString());
+                    intento += 1;
+                    txt_try.setText(String.valueOf(intento));
                 }
 
                 String[] nowArray = new String[9];
@@ -356,16 +479,28 @@ import java.util.Random;
                     btn_8.setBackgroundColor(Color.GRAY);
                     btn_9.setText(now);
                     btn_9.setBackgroundColor(getResources().getColor(R.color.holo_orange_light));
+
+                    int intento = Integer.parseInt(txt_try.getText().toString());
+                    intento += 1;
+                    txt_try.setText(String.valueOf(intento));
                 }else if(move7.equals("")){
                     btn_8.setText("");
                     btn_8.setBackgroundColor(Color.GRAY);
                     btn_7.setText(now);
                     btn_7.setBackgroundColor(getResources().getColor(R.color.holo_orange_light));
+
+                    int intento = Integer.parseInt(txt_try.getText().toString());
+                    intento += 1;
+                    txt_try.setText(String.valueOf(intento));
                 }else if(move5.equals("")){
                     btn_8.setText("");
                     btn_8.setBackgroundColor(Color.GRAY);
                     btn_5.setText(now);
                     btn_5.setBackgroundColor(getResources().getColor(R.color.holo_orange_light));
+
+                    int intento = Integer.parseInt(txt_try.getText().toString());
+                    intento += 1;
+                    txt_try.setText(String.valueOf(intento));
                 }
 
                 String[] nowArray = new String[9];
@@ -398,11 +533,19 @@ import java.util.Random;
                     btn_9.setBackgroundColor(Color.GRAY);
                     btn_8.setText(now);
                     btn_8.setBackgroundColor(getResources().getColor(R.color.holo_orange_light));
+
+                    int intento = Integer.parseInt(txt_try.getText().toString());
+                    intento += 1;
+                    txt_try.setText(String.valueOf(intento));
                 }else if(move6.equals("")){
                     btn_9.setText("");
                     btn_9.setBackgroundColor(Color.GRAY);
                     btn_6.setText(now);
                     btn_6.setBackgroundColor(getResources().getColor(R.color.holo_orange_light));
+
+                    int intento = Integer.parseInt(txt_try.getText().toString());
+                    intento += 1;
+                    txt_try.setText(String.valueOf(intento));
                 }
 
                 String[] nowArray = new String[9];
@@ -421,6 +564,7 @@ import java.util.Random;
                 }
             }
         });
+
     }
 
      public boolean comparador (String nowArray[]){
